@@ -181,7 +181,7 @@ function checkInputs()
 sendBtn.addEventListener("click",checkInputs);
 
 //input event to show red required alert
-fullName.addEventListener("input",function()
+fullName.addEventListener("blur",function()
 {
     // the id of <p> is put in html as "input id"+"-p"
     let paragraph=document.getElementById(fullName.id+"-p");
@@ -196,7 +196,7 @@ fullName.addEventListener("input",function()
         fullName.style.borderBottom="1px solid rgb(189, 65, 65)";
     }
 })
-email.addEventListener("input",function()
+email.addEventListener("blur",function()
 {
     let paragraph=document.getElementById(email.id+"-p");
     if(email.value!="")
@@ -210,7 +210,7 @@ email.addEventListener("input",function()
         email.style.borderBottom="1px solid rgb(189, 65, 65)";
     }
 })
-phoneNumber.addEventListener("input",function()
+phoneNumber.addEventListener("blur",function()
 {
     let paragraph=document.getElementById(phoneNumber.id+"-p");
     if(phoneNumber.value!="")
@@ -224,7 +224,7 @@ phoneNumber.addEventListener("input",function()
         phoneNumber.style.borderBottom="1px solid rgb(189, 65, 65)";
     }
 })
-message.addEventListener("input",function()
+message.addEventListener("blur",function()
 {
     let paragraph=document.getElementById(message.id+"-p");
     if(message.value!="")
